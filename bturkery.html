@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <h1 class="bg-success bg-gradient">Today</h1>
+            <ol>
+            {{#each tigerStripe}}
+
+                <li>{{tigerStripe.title}}</li>
+                <li>drink coffee</li>
+                
+                {{/each}}
+            </ol>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4">
+            <h1>Eventually</h1>
+            <ol>
+                <li>Colonoscopy</li>
+                <li>Oil Change</li>
+            </ol>
+        </div>
+      </div>
+            <!-- <script src="/javascript/login.js"></script> -->
+
+</body>
+
+</html>
