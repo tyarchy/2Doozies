@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS doozie_db;
+
+CREATE DATABASE doozie_db;
