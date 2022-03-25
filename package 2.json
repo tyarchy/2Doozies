@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "express": "^4.17.3",
     "node-schedule": "^2.1.0"
   },
   "scripts": {
@@ -9,6 +8,7 @@
   "name": "2doozies",
   "version": "1.0.0",
   "main": "server.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyarchy/2Doozies.git"
