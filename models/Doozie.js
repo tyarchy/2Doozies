@@ -9,26 +9,26 @@ class Doozie extends Model {
 Doozie.init(
     {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             notNull: true,
             autoIncrement: true,
             PrimaryKey: true
         },
         User_id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             notNull: true,
             foreignKey: true
         },
         title: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             notNull: true,
         },
         description: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
         },
         due_date: {
-            type: dataTypes.STRING,
-            vlaidate: {
+            type: DataTypes.STRING,
+            validate: {
                 isDate: true
             }
         }
