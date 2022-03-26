@@ -1,7 +1,7 @@
 const express = require("express");
 const sequelize = require("./config/connection");
 const routes = require("./controllers/api");
-// Just added two below 3-26 not on develeop yet
+// Just added two below 3-26
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 // const schedule = require('node-schedule');
@@ -9,11 +9,11 @@ const exphbs = require("express-handlebars");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// just added two below 3-26 not on develeop yet
+// just added two below 3-26
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-// just added two below 3-26 not on develeop yet
+// just added two below 3-26
 const sess = {
   secret: "Its a secret",
   cookie: {},
@@ -26,8 +26,10 @@ const sess = {
 
 app.use(session(sess));
 
-//need to add in helpers/handlebars here
-const hbs = exphbs.create({ helpers });
+const 
+
+//do we need the helpers part?
+const hbs = exphbs.create({ auth });
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
