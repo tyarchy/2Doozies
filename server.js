@@ -26,10 +26,10 @@ const sess = {
 
 app.use(session(sess));
 
-const 
+//const auth=
 
-//do we need the helpers part?
-const hbs = exphbs.create({ auth });
+//put these in once Utils/auth is created
+//const hbs = exphbs.create({ auth });
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
