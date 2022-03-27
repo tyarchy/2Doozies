@@ -26,9 +26,9 @@ const sess = {
 
 app.use(session(sess));
 
-//const auth=
+const auth = require("./utils/auth");
 
-//put these in once Utils/auth is created
+//not sure we need below.  Module only uses helpers and we don't have that.
 //const hbs = exphbs.create({ auth });
 
 app.engine("handlebars", hbs.engine);
