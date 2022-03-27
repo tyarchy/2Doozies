@@ -1,5 +1,4 @@
 const express = require("express");
-const sequelize = require("./config/connection");
 const routes = require("./controllers/api");
 // Just added two below 3-26
 const session = require("express-session");
@@ -29,7 +28,7 @@ app.use(session(sess));
 const auth = require("./utils/auth");
 
 //not sure we need below.  Module only uses helpers and we don't have that.
-//const hbs = exphbs.create({ auth });
+const hbs = exphbs.create({ auth });
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
