@@ -9,3 +9,25 @@ router.get("/login", (req, res) => {
   }
   res.render("login");
 });
+
+router.get('/', (req, res) => {
+  console.log('======================');
+  Doozie.findAll({
+    attributes: [
+      'title',
+      'description',
+      'created_at',
+    ],
+  })
+    .then(dbDoozieData => {
+      const doozie = dbDoozieData.map(doozie => doozie.get({ plain: true }));
+
+      res.render('dashboard', {doozie});
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+module.exports = router;

@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require("express");
 const routes = require("./controllers/api");
 // Just added two below 3-26
@@ -5,8 +6,11 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 // const schedule = require('node-schedule');
 
+
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const sequelize = require('./config/connection');
 
 // just added two below 3-26
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
