@@ -12,7 +12,7 @@ Doozie.init(
             type: DataTypes.INTEGER,
             notNull: true,
             autoIncrement: true,
-            PrimaryKey: true
+            primaryKey: true
         },
         User_id: {
             type: DataTypes.INTEGER,
