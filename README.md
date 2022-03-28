@@ -6,7 +6,7 @@
 
 --------
 
-## A must have ToDo application. “2Doozie” is the must have ToDo application that will help you organize your day, week, month and beyond. User friendly, it simply lists all the mess in your world and schedules when needed in order to mark them off complete with great satisfaction.
+## A must have ToDo application. “2Doozie” is the must have ToDo application that will help you organize your day, week, month and beyond. User friendly, it simply lists all the mess in your world and schedules a due date reminder in order to mark them off complete with great satisfaction!
 
 ****
 ****
@@ -16,8 +16,6 @@
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Test](#test)
-
-* [Questions](#questions)
 
 ****
 ****
@@ -29,28 +27,20 @@ Login and go!
 
 #### Usage
 
+![link to the deployed application]()
+
 
 ----
 
-#### Contributing
-* tyarchy
-* nichojohnson84
-* jstable1
-* jwputah
-
-----
 
 #### Test
 No tests have been developed for the application at this time.
 
-----
-
-
 
 ****
 ****
 
-#### Questions
+#### Contributing
 Any questions? You can contact me directly at tyarchy@gmail.com
 Or visit my [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/tyarchy)
 
@@ -66,7 +56,7 @@ Or visit my [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](
 Any questions? You can contact me directly at jwputah7@gmail.com
 Or visit my [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/jwputah)
 
-Any questions? You can contact me directly at ashleylynn
-Or visit my [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/jwputah)
+Any questions? You can contact me directly at allockhart49@gmail.com
+Or visit my [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/glitterbones)
 
 
