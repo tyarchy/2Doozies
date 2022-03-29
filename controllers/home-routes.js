@@ -10,6 +10,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/dashboard', (req, res) => {});
+
 router.get('/', (req, res) => {
   if (req.session.loggedIn) {
     Doozie.findAll({
