@@ -10,7 +10,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/dashboard', (req, res) => {});
+router.get('/dashboard', (req, res) => { });
 
 router.get('/', (req, res) => {
   if (req.session.loggedIn) {
@@ -18,15 +18,16 @@ router.get('/', (req, res) => {
       attributes: ['title', 'description', 'created_at'],
     })
       .then((dbDoozieData) => {
-        const doozie = dbDoozieData.map((doozie) =>
+        let doozie = dbDoozieData.map((doozie) =>
           doozie.get({ plain: true })
         );
 
-        res.render('dashboard', { doozie, loggedIn: true });
+        console.table(doozie)
+        res.render('dashboard', {doozie, loggedIn: true});
       })
       .catch((err) => {
         console.log(err);
-        res.status(500).json(err);
+        res.status(500).json(err);pu
       });
   } else {
     res.render('login');
