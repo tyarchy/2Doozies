@@ -1,38 +1,34 @@
-  <html lang="en">
+<div class="row">
+    <div class="col-2">{{doozie}}</div>
+    <div class="col-4">
+        <h1>Today</h1>
+        <textarea class="form-control" id="doozieInput" rows="3"></textarea>
+        <ol>
+        {{#each doozie}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>2Doozies</title>
-</head>
+            <li>{{doozie}}</li>
+            
+        {{/each}}
+        </ol>
 
-<body>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4">
-            <h1 class="bg-gradient">Today</h1>
-            <ol>
-            {{#each tigerStripe}}
+        <button onclick=test({{{doozie}}})>click</button>
 
-                <li>{{tigerStripe.title}}</li>
-                <li>drink coffee</li>
-                
-                {{/each}}
-            </ol>
-        </div>
-        <div class="col-2"></div>
-        <div class="col-4">
-            <h1>Eventually</h1>
-            <ol>
-                <li>Colonoscopy</li>
-                <li>Oil Change</li>
-            </ol>
-        </div>
-      </div>
-            <!-- <script src="/javascript/login.js"></script> -->
+    </div>
 
-</body>
+    <div class="col-4">
+        <h1>Eventually</h1>
+        <textarea class="form-control" id="doozieInput" rows="3"></textarea>
+        <ol>
+            <li>Colonoscopy</li>
+            <li>Oil Change</li>
+        </ol>
+    </div>
+    <div class="col-2"></div>
+</div>
+<!-- <script src="/javascript/login.js"></script> -->
 
-</html>
+<script>
+    function test(arg) {
+        console.log(arg)
+    }
+</script>

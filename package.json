@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds"
+    "seed": "node ./seeds/index.js",
+    "watch": "nodemon server.js"
   },
   "name": "2doozies",
   "version": "1.0.0",
