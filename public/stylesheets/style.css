@@ -1,1 +1,24 @@
-/* need to style login page
+:root {
+    --primary: #5ED1F7;
+    --secondary: #ffffff;
+    --blue: #5ED1F7;
+}
+
+body {
+    font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+    color: var(--secondary);
+    background-color: var(--primary);
+    margin: 40px;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+a {
+    color: var(--secondary);
+}
+
+.btn-outline-info {
+    border-color: var(--secondary);
+}

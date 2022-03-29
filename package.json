@@ -11,7 +11,8 @@
     "sequelize": "^6.17.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds"
   },
   "name": "2doozies",
   "version": "1.0.0",
