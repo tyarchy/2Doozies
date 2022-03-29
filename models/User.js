@@ -1,7 +1,7 @@
 // Package dependencies
-const sequelize = require("../config/connection");
-const bcrypt = require("bcrypt");
-const { Model, DataTypes } = require("sequelize");
+const sequelize = require('../config/connection');
+const bcrypt = require('bcrypt');
+const { Model, DataTypes } = require('sequelize');
 
 // Create a user model
 class User extends Model {
@@ -60,7 +60,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
+    modelName: 'user',
   }
 );
 
