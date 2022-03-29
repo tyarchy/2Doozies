@@ -13,19 +13,24 @@ router.get('/login', (req, res) => {
 router.get('/dashboard', (req, res) => {});
 
 router.get('/', (req, res) => {
-  console.log('======================');
-  Doozie.findAll({
-    attributes: ['title', 'description', 'created_at'],
-  })
-    .then((dbDoozieData) => {
-      const doozie = dbDoozieData.map((doozie) => doozie.get({ plain: true }));
-
-      res.render('dashboard', { doozie });
+  if (req.session.loggedIn) {
+    Doozie.findAll({
+      attributes: ['title', 'description', 'created_at'],
     })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+      .then((dbDoozieData) => {
+        const doozie = dbDoozieData.map((doozie) =>
+          doozie.get({ plain: true })
+        );
+
+        res.render('dashboard', { doozie, loggedIn: true });
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  } else {
+    res.render('login');
+  }
 });
 
 module.exports = router;
