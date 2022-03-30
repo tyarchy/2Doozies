@@ -1,17 +1,18 @@
 <div class="row">
-    <div class="col-2">{{doozie}}</div>
+    <div class="col-2"></div>
     <div class="col-4">
         <h1>Today</h1>
         <textarea class="form-control" id="doozieInput" rows="3"></textarea>
         <ol>
-        {{#each doozie}}
+            {{#each doozie}}
 
-            <li>{{doozie}}</li>
-            
-        {{/each}}
+            <li>{{this.title}}</li>
+            <li>{{this.description}}</li>
+
+            {{/each}}
         </ol>
 
-        <button onclick=test({{{doozie}}})>click</button>
+
 
     </div>
 
@@ -26,9 +27,3 @@
     <div class="col-2"></div>
 </div>
 <!-- <script src="/javascript/login.js"></script> -->
-
-<script>
-    function test(arg) {
-        console.log(arg)
-    }
-</script>
