@@ -1,6 +1,7 @@
 :root {
     --primary: #5ED1F7;
     --secondary: #ffffff;
+    --yellow: #F4EB72;
     --blue: #5ED1F7;
 }
 
@@ -15,10 +16,37 @@ header {
     margin-bottom: 70px;
 }
 
-a {
+a, .btn-outline-info {
     color: var(--secondary);
 }
 
 .btn-outline-info {
     border-color: var(--secondary);
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+form button {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+label {
+    padding: 10px;
+}
+
+.loginPage img {
+    width: 50%;
+}
+
+.signup-form, .login-form {
+    padding: 40px;
+    border: 3px solid var(--yellow);
+    border-radius: 15px;
+    width: 31vw;
+    margin-top: 50px;
 }
