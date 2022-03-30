@@ -3,17 +3,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../stylesheets/style.css" />
-    <title>2Doozies</title>
+    <title>2doozies</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluency/48/000000/checked.png"/>
   </head>
   <body>
     <header>
       <nav>
         {{#if loggedIn}}
           <a href="/dashboard">dashboard</a>
-          <button id="logout" class="btn btn-outline-info">logout</button>
+          <div class="text-right">
+            <button id="logout" class="btn btn-outline-info bg-blue btn-lg text-right">logout</button>
+          </div>
         {{else}}
           <div class="text-right">
             <button type="button" class="btn btn-outline-info bg-blue btn-lg text-right">
@@ -24,7 +26,7 @@
       </nav>
       <h1>
         <p class="text-center font-weight-bold text-white">
-          <a href="/">2Doozies</a>
+          <a href="/"><font color=#F4EB72>2</font>doozies</a>
         </p>
       </h1>
     </header>
