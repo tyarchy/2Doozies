@@ -74,7 +74,6 @@ label {
     background-image: url("../images/current_background.jpeg");
     background-size: cover;
     color: var(--primary);
-    margin: 39px;
     padding: 20px;
 }
 
