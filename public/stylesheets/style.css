@@ -44,6 +44,10 @@ form button {
     margin-left: 5px;
 }
 
+.future-list{
+    margin-left: 10px;
+}
+
 label {
     padding-bottom: 20px;
 }
@@ -56,12 +60,24 @@ label {
     padding: 20px;
     border: 3px solid var(--yellow);
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 55px;
     background-color: var(--yellow);
     width: auto;
     height: auto;
 }
 
 .signup-form button, .login-form button {
+    background-color: var(--primary);
+}
+
+.today-list, .future-list {
+    background-image: url("../images/current_background.jpeg");
+    background-size: cover;
+    color: var(--primary);
+    margin: 39px;
+    padding: 20px;
+}
+
+.today-list button {
     background-color: var(--primary);
 }
