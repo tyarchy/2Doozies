@@ -20,6 +20,15 @@ a, .btn-outline-info {
     color: var(--secondary);
 }
 
+a:hover {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.btn:hover {
+    background-color: #D383FF;
+}
+
 .btn-outline-info {
     border-color: var(--secondary);
 }
@@ -32,21 +41,27 @@ a, .btn-outline-info {
 
 form button {
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 label {
-    padding: 10px;
+    padding-bottom: 20px;
 }
 
-.loginPage img {
+.login-page img {
     width: 50%;
 }
 
 .signup-form, .login-form {
-    padding: 40px;
+    padding: 20px;
     border: 3px solid var(--yellow);
     border-radius: 15px;
-    width: 31vw;
-    margin-top: 50px;
+    margin-top: 30px;
+    background-color: var(--yellow);
+    width: auto;
+    height: auto;
+}
+
+.signup-form button, .login-form button {
+    background-color: var(--primary);
 }
