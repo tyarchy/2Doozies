@@ -1,17 +1,21 @@
 <div class="row d-flex justify-content-around">
     <div class="col-5 today-list">
         <h1 class="text-center">Today</h1>
-        <textarea class="form-control text-center" placeholder ="Add your current to-do here!!!" id="doozieInput" rows="3"></textarea>
+        <input id = "title" class="form-control text-center" placeholder ="Add your to-do's title here!!!" />
         <br>
+        <textarea id = "description" class="form-control text-center" placeholder ="Add a description of your to-do here." rows="3"></textarea>
+        <br>
+        <input id = "userid" value = {{userid}} type = "hidden" />
         <div class="text-center">
-            <button class="btn btn-outline-info bg-blue btn-lg text-center" onclick=test({{{doozie}}})>Add To-do!</button>
+            <button id= "add" class="btn btn-outline-info bg-blue btn-lg text-center">Add To-do!</button>
         </div>
         <br>
-        <ol>
+        <ol id = "doozieContainer">
         {{#each doozie}}
 
             <li>{{this.title}}</li>
                 <div>{{this.description}}</div>
+                <button value = "{{this.id}}" class="btn btn-outline-info bg-blue" >Done</button>
             
         {{/each}}
         </ol>
@@ -28,10 +32,5 @@
     </div>
     <div class="col-2"></div>
 </div>
-<!-- <script src="/javascript/login.js"></script> -->
-
-<script>
-    function test(arg) {
-        console.log(arg)
-    }
-</script>
+<script src="/javascript/savedoozie.js"></script>
+<script src="/javascript/deletedoozie.js"></script>

@@ -45,12 +45,10 @@ router.get('/:id', (req, res) => {
 
 // POST - create new doozie
 router.post('/', (req, res) => {
-  Doozie.create({
-    User_id: req.body.User_id,
-    title: req.body.title,
-    description: req.body.description,
-    due_date: req.body.due_date
-  })
+  console.log(req.body)
+  Doozie.create(
+    req.body
+  )
   .then(dbDoozieData => res.json(dbDoozieData))
   .catch(err => {
     console.log(err);
