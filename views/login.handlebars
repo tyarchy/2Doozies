@@ -1,29 +1,38 @@
-<form class="login-form">
-    <div>
-        <label for="email-login">email:</label>
-        <input type="text" id="email-login" />
-    </div>
-    <div>
-        <label for="password-login">password:</label>
-        <input type="password" id="password-login" />
-    </div>
-    <div>
-        <button type="submit">login</button>
-    </div>
-</form>
+<section class="login-page flex-row">
+  <div>
+    <form class='login-form'>
+      <div>
+        <label for='email-login'></label>
+        <input type='text' placeholder='Email' id='email-login' />
+      </div>
+      <div>
+        <label for='password-login'></label>
+        <input type='password' placeholder='Password' id='password-login' />
+      </div>
+      <div>
+        <button type='submit button' class='btn btn-outline-info bg-blue'>login</button>
+      </div>
+    </form>
 
-<form class="signup-form">
-    <div>
-        <label for="username-signup">username:</label>
-        <input type="text" id="username-signup" /> 
-    </div>
-    <div>
-        <label for="email-signup">email:</label>
-        <input type="text" id="email-signup" />
-    </div>
-    <div>
-        <button type="submit">signup</button>
-    </div>
-</form>
+    <form class='signup-form'>
+      <div>
+        <label for='username-signup'></label>
+        <input type='text' placeholder='Username' id='username-signup' />
+      </div>
+      <div>
+        <label for='email-signup'></label>
+        <input type='text' placeholder='Email' id='email-signup' />
+      </div>
+      <div>
+        <label for='create-password'></label>
+        <input type='text' placeholder='Password' id='password-signup' />
+      </div>
+      <div>
+        <button type='submit button' class='btn btn-outline-info bg-blue'>signup</button>
+      </div>
+    </form>
+  </div>
+  <img src='../images/login-image.jpeg' alt='get yo sh!t done in 3D lettering' />
+</section>
 
-<script src="/javascript/login.js"></script>
+<script src='/javascript/login.js'></script>

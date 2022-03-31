@@ -1,1 +1,82 @@
-/* need to style login page
+:root {
+    --primary: #5ED1F7;
+    --secondary: #ffffff;
+    --yellow: #F4EB72;
+    --blue: #5ED1F7;
+}
+
+body {
+    font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+    color: var(--secondary);
+    background-color: var(--primary);
+    margin: 40px;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+a, .btn-outline-info {
+    color: var(--secondary);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.btn:hover {
+    background-color: #D383FF;
+}
+
+.btn-outline-info {
+    border-color: var(--secondary);
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+form button {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.future-list{
+    margin-left: 10px;
+}
+
+label {
+    padding-bottom: 20px;
+}
+
+.login-page img {
+    width: 50%;
+}
+
+.signup-form, .login-form {
+    padding: 20px;
+    border: 3px solid var(--yellow);
+    border-radius: 15px;
+    margin-top: 55px;
+    background-color: var(--yellow);
+    width: auto;
+    height: auto;
+}
+
+.signup-form button, .login-form button {
+    background-color: var(--primary);
+}
+
+.today-list, .future-list {
+    background-image: url("../images/current_background.jpeg");
+    background-size: cover;
+    color: var(--primary);
+    padding: 20px;
+}
+
+.today-list button {
+    background-color: var(--primary);
+}

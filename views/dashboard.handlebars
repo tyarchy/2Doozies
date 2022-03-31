@@ -1,38 +1,37 @@
-  <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>2Doozies</title>
-</head>
-
-<body>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4">
-            <h1 class="bg-success bg-gradient">Today</h1>
-            <ol>
-            {{#each tigerStripe}}
-
-                <li>{{tigerStripe.title}}</li>
-                <li>drink coffee</li>
-                
-                {{/each}}
-            </ol>
+<div class="row d-flex justify-content-around">
+    <div class="col-5 today-list">
+        <h1 class="text-center">Today</h1>
+        <input id = "title" class="form-control text-center" placeholder ="Add your to-do's title here!!!" />
+        <br>
+        <textarea id = "description" class="form-control text-center" placeholder ="Add a description of your to-do here." rows="3"></textarea>
+        <br>
+        <input id = "userid" value = {{userid}} type = "hidden" />
+        <div class="text-center">
+            <button id= "add" class="btn btn-outline-info bg-blue btn-lg text-center">Add To-do!</button>
         </div>
-        <div class="col-2"></div>
-        <div class="col-4">
-            <h1>Eventually</h1>
-            <ol>
-                <li>Colonoscopy</li>
-                <li>Oil Change</li>
-            </ol>
-        </div>
-      </div>
-            <!-- <script src="/javascript/login.js"></script> -->
+        <br>
+        <ol id = "doozieContainer">
+        {{#each doozie}}
 
-</body>
+            <li>{{this.title}}</li>
+                <div>{{this.description}}</div>
+                <button value = "{{this.id}}" class="btn btn-outline-info bg-blue" >Done</button>
+            
+           {{/each}}
+        </ol>
+    </div>
 
-</html>
+    <div class="col-5 future-list">
+        <h1 class="text-center">Eventually</h1>
+        <textarea class="form-control text-center" placeholder="Add your future to-do here!!!" id="doozieInput" rows="3"></textarea>
+        <br>
+        <ol>
+            <li>Colonoscopy</li>
+            <li>Oil Change</li>
+        </ol>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<script src="/javascript/savedoozie.js"></script>
+<script src="/javascript/deletedoozie.js"></script>
