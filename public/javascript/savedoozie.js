@@ -14,7 +14,7 @@ async function add() {
         body: JSON.stringify (newDoozieInput),
         headers: { 'Content-Type': 'application/json' },
       });
-    
+
       if (response.ok) {
         document.location.replace('/');
       } else {
