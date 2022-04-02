@@ -4,6 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/92496520/161363571-30134c2d-4ec8-42f9-8e70-cfd763f1b75e.png)
 
+![image](https://user-images.githubusercontent.com/92496520/161363585-a4d08d8f-75d3-41db-9180-282137bf7cdc.png)
+
 --------
 
 ## A must have ToDo application. “2Doozie” is the must have ToDo application that will help you organize your day, week, month and beyond. User friendly, it simply lists all the mess in your world and schedules a due date reminder in order to mark them off complete with great satisfaction!
