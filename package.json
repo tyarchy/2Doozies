@@ -23,11 +23,11 @@
     "url": "git+https://github.com/tyarchy/2Doozies.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tyler Gregory, Joshua Pace, Jessica Stabler, AshleyLynn Lockhart, Nick Johnson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tyarchy/2Doozies/issues"
   },
   "homepage": "https://github.com/tyarchy/2Doozies#readme",
-  "description": ""
+  "description": "An app to get your life in order"
 }
