@@ -29,8 +29,7 @@ Login and go!
 
 #### Usage
 
-![link to the deployed application]()
-
+https://twodoozies-app.herokuapp.com/
 
 ----
 
